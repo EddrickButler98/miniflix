@@ -7,6 +7,8 @@
 // [1, 2, 3]
 // >>> shuffle([1,2,3])
 // [2, 3, 1]
+
+
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -39,7 +41,8 @@ var video_urls = [
 	"https://www.youtube.com/watch?v=zuNSoKsIxJo",
 	"https://www.youtube.com/watch?v=ocTTHkQZsBw",
 	"https://www.youtube.com/watch?v=snpnKcCFFus",
-	"https://www.youtube.com/watch?v=K_xwj9bHZm4"
+	"https://www.youtube.com/watch?v=K_xwj9bHZm4",
+	"https://www.youtube.com/watch?v=aRRNoe-Iqxo"
 ];
 
 // links to posters for the video clips
@@ -55,7 +58,8 @@ var poster_urls = [
 	"img/ride_along.jpg",
 	"img/the_fifth_wave.jpg",
 	"img/2012.jpg",
-	"img/the_day_after_tomorrow.jpg"
+	"img/the_day_after_tomorrow.jpg",
+	"img/i_can_do_bad.jpg"
 ];
 
 // divs that contain the movie links and posters
