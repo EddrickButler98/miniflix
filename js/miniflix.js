@@ -1,4 +1,12 @@
 // Taken from http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+// Array -> Array
+//
+// Randomize the order of the elements in the array.
+//
+// >>> shuffle([1,2,3])
+// [1, 2, 3]
+// >>> shuffle([1,2,3])
+// [2, 3, 1]
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -18,6 +26,7 @@ function shuffle(array) {
   return array;
 }
 
+// links to video clips
 var video_urls = [
 	"https://www.youtube.com/watch?v=CB7iTh-G0Wo",
 	"https://www.youtube.com/watch?v=jUJ9As47Yq8",
@@ -33,6 +42,7 @@ var video_urls = [
 	"https://www.youtube.com/watch?v=K_xwj9bHZm4"
 ];
 
+// links to posters for the video clips
 var poster_urls = [
 	"img/life_movie_cover.jpg",
 	"img/next_friday.jpg",
@@ -48,8 +58,10 @@ var poster_urls = [
 	"img/the_day_after_tomorrow.jpg"
 ];
 
+// divs that contain the movie links and posters
 var movie_elements = document.getElementsByClassName("movie");
 
+// Randomize the order of the movies in the html
 function changePlaces() {
 	var ids = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
 
@@ -66,7 +78,9 @@ function changePlaces() {
 	}
 }
 
+// start of the page
 changePlaces();
 
+// add the onclick listener for the randomize button
 document.getElementById("randomize-button")
 	    .addEventListener("click", changePlaces);
