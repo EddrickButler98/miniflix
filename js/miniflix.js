@@ -48,11 +48,11 @@ var poster_urls = [
 	"img/the_day_after_tomorrow.jpg"
 ];
 
-var ids = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
-
 var movie_elements = document.getElementsByClassName("movie");
 
 function changePlaces() {
+	var ids = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+
 	for (var i = 0; i < ids.length; i++) {
 		var movie_element = movie_elements[i];
 		var video_url = video_urls[ids[i]];
@@ -67,3 +67,6 @@ function changePlaces() {
 }
 
 changePlaces();
+
+document.getElementById("randomize-button")
+	    .addEventListener("click", changePlaces);
