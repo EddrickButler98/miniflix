@@ -13,3 +13,18 @@ var video_urls = [
 	"https://www.youtube.com/watch?v=snpnKcCFFus",
 	"https://www.youtube.com/watch?v=K_xwj9bHZm4"
 ];
+
+var poster_urls = [
+"img/life_movie_cover.jpg",
+"img/next_friday.jpg",
+"img/roscoe_jenkins.jpg",
+"img/johnson_family_vacation.jpg",
+"img/the_fighting_temptations.jpg",
+"img/barbershop.jpg",
+"img/barbershop2.jpg",
+"img/the_next_cut.jpg",
+"img/ride_along.jpg",
+"img/the_fifth_wave.jpg",
+"img/2012.jpg",
+"img/the_day_after_tomorrow.jpg"
+];
