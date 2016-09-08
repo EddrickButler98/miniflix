@@ -11,6 +11,5 @@ var video_urls = [
 	"https://www.youtube.com/watch?v=zuNSoKsIxJo",
 	"https://www.youtube.com/watch?v=ocTTHkQZsBw",
 	"https://www.youtube.com/watch?v=snpnKcCFFus",
-	"https://www.youtube.com/watch?v=K_xwj9bHZm4",
-	"https://www.youtube.com/watch?v=B7D9YKRomUM"
+	"https://www.youtube.com/watch?v=K_xwj9bHZm4"
 ];
