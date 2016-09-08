@@ -1,4 +1,23 @@
-// Add video links to this list 
+// Taken from http://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
 var video_urls = [
 	"https://www.youtube.com/watch?v=CB7iTh-G0Wo",
 	"https://www.youtube.com/watch?v=jUJ9As47Yq8",
@@ -15,16 +34,19 @@ var video_urls = [
 ];
 
 var poster_urls = [
-"img/life_movie_cover.jpg",
-"img/next_friday.jpg",
-"img/roscoe_jenkins.jpg",
-"img/johnson_family_vacation.jpg",
-"img/the_fighting_temptations.jpg",
-"img/barbershop.jpg",
-"img/barbershop2.jpg",
-"img/the_next_cut.jpg",
-"img/ride_along.jpg",
-"img/the_fifth_wave.jpg",
-"img/2012.jpg",
-"img/the_day_after_tomorrow.jpg"
+	"img/life_movie_cover.jpg",
+	"img/next_friday.jpg",
+	"img/roscoe_jenkins.jpg",
+	"img/johnson_family_vacation.jpg",
+	"img/the_fighting_temptations.jpg",
+	"img/barbershop.jpg",
+	"img/barbershop2.jpg",
+	"img/the_next_cut.jpg",
+	"img/ride_along.jpg",
+	"img/the_fifth_wave.jpg",
+	"img/2012.jpg",
+	"img/the_day_after_tomorrow.jpg"
 ];
+
+var ids = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+
