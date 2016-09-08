@@ -50,3 +50,20 @@ var poster_urls = [
 
 var ids = shuffle([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
 
+var movie_elements = document.getElementsByClassName("movie");
+
+function changePlaces() {
+	for (var i = 0; i < ids.length; i++) {
+		var movie_element = movie_elements[i];
+		var video_url = video_urls[ids[i]];
+		var poster_url = poster_urls[ids[i]];
+
+		var a = movie_element.getElementsByTagName("a")[0];
+		var img = movie_element.getElementsByTagName("img")[0];
+
+		a.href = video_url;
+		img.src = poster_url;
+	}
+}
+
+changePlaces();
